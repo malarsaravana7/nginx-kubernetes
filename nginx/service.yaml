@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: nginx-service
   namespace: test
+  labels:
+    environment: test
 spec:
   selector:
     app: nginx
